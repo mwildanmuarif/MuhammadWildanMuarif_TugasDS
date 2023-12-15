@@ -1,0 +1,37 @@
+ketik psvm = untuk fungsion : public static void main
+int = untuk angka. type data dan harus ada nilai variable nya
+string = untuk huruf
+system.out.printIn sudah satu kalimat untuk menampilkan
+== artinya untuk validasi atau perbandingan
+= untuk memberi value atau isi (bukan mengecek)
+boolean : untuk type data yg valuenya true or false
+if = jika
+++ : artinya untuk perulangan atau terus berjalan dan menambahkan (nilai ditambah 1)
+while : untuk pengulangan (kondisi baru aksi)
+do while : aksi dulu baru kondisi
+string harus menggunakan "
+integer untuk bilangan bulat : contoh gabisa pake koma/.
+
+package com.javaprogram;
+
+import java.util.Scanner;
+
+public class ExceptionHandling {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        try{
+            System.out.print("Input nilai pertama :");
+            int n1 = input.nextInt();
+            System.out.print("Input nilai kedua :");
+            int n2 =input.nextInt();
+
+            int sum=n1/n2;
+            System.out.println(sum);
+        }catch (Exception e){
+            System.out.println("You cant do that");
+        }
+    }
+
+
+}
